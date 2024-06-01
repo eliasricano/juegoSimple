@@ -11,7 +11,6 @@ public class Personaje {
         this.salud = salud;
         this.saludMax = salud;
         this.arma = Arma.puños;
-        this.barraSalud = new BarraSalud(this, "verde");
     }
 
     void atacar(Personaje objetivo) {

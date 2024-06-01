@@ -1,9 +1,9 @@
 public class BarraSalud {
     Personaje personaje;
-    int tamaño;
+    int tamaño = 20;
     int valorMax;
     int valorActual;
-    boolean tieneColor;
+    boolean tieneColor = true;
     String simboloRestante = "█";
     String simboloPerdido = "_";
     String barra = "|";

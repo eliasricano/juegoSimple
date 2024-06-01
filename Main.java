@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Personaje heroe = new Personaje("Héroe", 100);
-        Personaje enemigo = new Personaje("Enemigo", 100);
+        Heroe heroe = new Heroe("Héroe", 100);
+        Enemigo enemigo = new Enemigo("Enemigo", 100, Arma.arco);
         Scanner scan = new Scanner(System.in);
         heroe.equipar(Arma.espada);
         enemigo.equipar(Arma.arco);
@@ -15,7 +15,6 @@ public class Main {
             System.out.println("RONDA " + (i + 1));
             heroe.atacar(enemigo);
             enemigo.atacar(heroe);
-
             heroe.barraSalud.pintar();
             enemigo.barraSalud.pintar();
 

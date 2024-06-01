@@ -4,5 +4,6 @@ public class Heroe extends Personaje {
     Heroe(String name, int salud) {
         super(name, salud);
         this.armaDefault = arma;
+        super.barraSalud = new BarraSalud(this, "verde");
     }
 }
