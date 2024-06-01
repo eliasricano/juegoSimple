@@ -16,7 +16,6 @@ public class Personaje {
     void atacar(Personaje objetivo) {
         objetivo.salud -= this.arma.daño;
         objetivo.salud = Math.max(objetivo.salud, 0);
-
         objetivo.barraSalud.actualizar();
         System.out.println(this.nombre + 
         " hizo " + 
